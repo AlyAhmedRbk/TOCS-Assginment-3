@@ -3,20 +3,17 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo "building"
-        sleep 10
+        echo "building App"
       }
     }
     stage('Test') {
       steps {
-        echo "testing"
-        sleep 30
+        echo "testing App"
       }
     }
     stage('Deploy') {
       steps {
-        echo "deploying"
-        stageMessage "sample stage message"
+        echo "deploying App"
       }
     }
   }
